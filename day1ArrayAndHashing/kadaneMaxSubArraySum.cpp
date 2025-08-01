@@ -15,9 +15,12 @@ class Solution {
         int n = nums.size();
         for(int i = 0 ; i < n ; i++){
             int start;
-            if(sum == 0) {
-                start = i;
-            }
+
+            // these 3 lines are  the best practice
+            
+            // if(sum == 0) {
+            //     start = i;
+            // }
             sum += nums[i];
 
             if(sum > maxi){
